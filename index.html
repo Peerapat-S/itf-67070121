@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><span class="username" id="username">Peerapat Sonpong</span></h1>
+    <div class="profile">
+        <div class="notify"><p>1</p></div>
+    </div>
+
+    <div>
+        <input type="text" id="usernameInput" placeholder="Enter Username">
+        <button onclick="setUsername()">SET</button>
+    </div>
+    <div>
+        <input type="text" id="profileInput" placeholder="Enter Image URL">
+        <button onclick="setProflie()">SET</button>
+    </div>
+    <h2>Phone Number List</h2>
+    <div>
+        <input type="text" id="nameInput" placeholder="Name">
+        <input type="tel" id="phoneInput" placeholder="Tel">
+        <button onclick="addContact()">ADD</button>
+        <button onclick="exportContact()">EXPORT</button>
+    </div>
+
+    <table id="contactTable">
+        <tr>
+            <th>No.</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+        </tr>
+    </table>
+</body>
+</html>
