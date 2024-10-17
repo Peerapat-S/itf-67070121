@@ -8,8 +8,8 @@ function setUsername() {
 }
 
 function setAvatar() {
-    const url = document.getElementById('profileInput').value;
-    document.getElementById('profile').style.backgroundImage = url ? `url(${url})` : `url(${DEFAULT_AVATAR_URL})`;
+    const url = document.getElementById('avatarInput').value;
+    document.getElementById('avatar').style.backgroundImage = url ? `url(${url})` : `url(${DEFAULT_AVATAR_URL})`;
 }
 
 function addContact() {

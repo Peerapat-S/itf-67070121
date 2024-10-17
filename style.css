@@ -1,75 +1,119 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    background-image: url(https://img.freepik.com/free-photo/acrylic-painting-background-black-wallpaper-image_53876-108339.jpg?w=996&t=st=1728124103~exp=1728124703~hmac=278baa17f72fd5bcfd08d783166b40142a717408e273277cdadc748667d55eb6);
+}
+
+/* Header Styles */
+header {
+    background-color: #DDD5D0;;
+    color: black;
     padding: 20px;
-}
-.profile {
-    width: 300px;
-    height: 300px;
-    background-image: url(https://i.pinimg.com/originals/64/42/01/6442019372e8ae82e632d4266acc2d2e.jpg);
-    border-radius: 50%;
-    background-position: center;
-    background-size: 150%;
-    position: relative;
+    text-align: center;
 }
 
-.notify {
-    width: 40px;
-    height: 40px;
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
     color: white;
-    font-weight: border;
-    background-color: red;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #CFC0BD;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
+    gap: 10px;
+    justify-content: space-between;
+    ;
+}
+
+.sec {
+    border: 2px solid whitesmoke;
+}
+
+#te {
+    background: #DDD5D0;
+    padding: auto;
+    margin: auto;
+}
+
+.flex-container {
     display: flex;
-}
-
-.username {
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.username:hover {
-    color: red;
-    text-decoration: underline;
-}
-
-input, button {
-    margin: 7px;
-    padding: 7px;
-}
-
-body h2 {
-    padding: 5px;
-    margin: 5px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 20px;
 }
 
 button {
+    background-color: #CFC0BD;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: whitesmoke;
+    background-color: #CFC0BD;
 }
 
-table{
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 500px;
-}
-th, td {
-    border: 1px solid black;
-    padding: 8px;
-    text-align: left;
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
 }
 
-th {
-    background-color: antiquewhite;
+footer p {
+    margin-bottom: 10px;
 }
+
+footer a {
+    color: #CFC0BD;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #CFC0BD;
+}
+
